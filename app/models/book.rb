@@ -17,4 +17,5 @@ class Book < ApplicationRecord
 	belongs_to :author
 	belongs_to :genre
 	validates_uniqueness_of :title
+  mount_uploader :cover_art, ImageUploader
 end

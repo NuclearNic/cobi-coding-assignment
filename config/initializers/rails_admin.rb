@@ -33,9 +33,31 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
-
-    ## With an audit adapter, you can add:
-    # history_index
-    # history_show
   end
+
+    config.model 'Book' do
+      navigation_icon 'fa fa-newspaper-o fa-fw'
+    
+      create do
+        exclude_fields :cover_art_base_64
+      end
+      edit do
+        exclude_fields :cover_art_base_64
+      end
+      list do
+        exclude_fields :cover_art_base_64
+      end
+
+      
+    
+    end
+    
+    config.model 'Author' do
+      navigation_icon 'fa fa-user-circle-o fa-fw'      
+
+    end
+    
+    config.model 'Genre' do
+      navigation_icon 'fa fa-pencil fa-fw'
+    end
 end
