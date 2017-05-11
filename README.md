@@ -6,7 +6,7 @@ README
 take up to 30 seconds to start up the first time. It can be found here: https://cobi-coding-assignment.herokuapp.com/
 * Storing author_id and genre_id on a book instead of strings. 
 * There is no authorization implementation, so CRSF prevention has been omitted.
-* ** In all urls below, :id refers to the column 'id' shown in the index view. **
+* **In all urls below, :id refers to the column 'id' shown in the index view.**
 
 ## API Endpoints
 
@@ -32,9 +32,9 @@ be uploaded from the CMS backend.
 
 # API Endpoints for Create/Update/Destroy of Books:
 
-* Note that a book requires a unique title. Create new book: ** POST ** https://cobi-coding-assignment.herokuapp.com/api/v1/books.json
-* Edit existing book: ** PATCH ** https://cobi-coding-assignment.herokuapp.com/api/v1/books/:id.json
-* Delete existing book: ** DELETE ** https://cobi-coding-assignment.herokuapp.com/api/v1/books/:id.json
+* Note that a book requires a unique title. Create new book: **POST** https://cobi-coding-assignment.herokuapp.com/api/v1/books.json
+* Edit existing book: **PATCH** https://cobi-coding-assignment.herokuapp.com/api/v1/books/:id.json
+* Delete existing book: **DELETE** https://cobi-coding-assignment.herokuapp.com/api/v1/books/:id.json
 
 * For CREATE and UPDATE above, the keys added to the body should be: title, description, year, author_id, genre_id. (again note that author_id and genre_id are the primary keys of the respective models).
 * All of the above was tested with Postman.
