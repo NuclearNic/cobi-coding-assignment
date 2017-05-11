@@ -19,4 +19,11 @@ class Book < ApplicationRecord
 	belongs_to :genre
 	validates_uniqueness_of :title
   mount_uploader :cover_art, ImageUploader
+
+  def genre_name
+  	self.genre.try(:name)
+  end
+  def author_name
+  	self.author.try(:name)
+  end
 end

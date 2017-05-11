@@ -38,15 +38,15 @@ RailsAdmin.config do |config|
     config.model 'Book' do
       navigation_icon 'fa fa-newspaper-o fa-fw'
     
-      create do
-        exclude_fields :cover_art_base_64
-      end
-      edit do
-        exclude_fields :cover_art_base_64
-      end
-      list do
-        exclude_fields :cover_art_base_64
-      end
+      # create do
+      #   exclude_fields :cover_art_base_64
+      # end
+      # edit do
+      #   exclude_fields :cover_art_base_64
+      # end
+      # list do
+      #   exclude_fields :cover_art_base_64
+      # end
 
       
     

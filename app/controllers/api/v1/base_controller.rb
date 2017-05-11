@@ -1,7 +1,7 @@
 class Api::V1::BaseController < ActionController::Base
   respond_to :json
-  after_filter :allow_cross_domain_access
-  protect_from_forgery with: :null_session
+  # after_filter :allow_cross_domain_access
+  # protect_from_forgery with: :null_session
 
   protected
 
