@@ -30,7 +30,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def remove_base_64
-    self.model.update_attribute((self.mounted_as.to_s + "_base_64").to_sym,nil)
+    self.model.update_attribute((self.mounted_as.to_s + "_base_64").to_sym,nil) unless self.model.destroyed?
   end
 
 
