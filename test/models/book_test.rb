@@ -11,6 +11,7 @@
 #  cover_art_base_64 :text
 #  created_at        :datetime         not null
 #  updated_at        :datetime         not null
+#  year              :string
 #
 
 require 'test_helper'

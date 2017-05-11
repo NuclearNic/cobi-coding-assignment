@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511125905) do
+ActiveRecord::Schema.define(version: 20170511151629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170511125905) do
     t.text     "cover_art_base_64"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.string   "year"
     t.index ["author_id"], name: "index_books_on_author_id", using: :btree
     t.index ["genre_id"], name: "index_books_on_genre_id", using: :btree
     t.index ["title"], name: "index_books_on_title", using: :btree

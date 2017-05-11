@@ -32,6 +32,7 @@ end
 
 gem 'mini_magick'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'rails_admin'
 gem 'rails_admin_rollincode'
 gem 'devise'
