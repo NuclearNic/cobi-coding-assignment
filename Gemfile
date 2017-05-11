@@ -33,5 +33,6 @@ end
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'rails_admin'
+gem 'rails_admin_rollincode'
 gem 'devise'
 gem 'bootstrap-sass'

@@ -16,4 +16,5 @@
 class Book < ApplicationRecord
 	belongs_to :author
 	belongs_to :genre
+	validates_uniqueness_of :title
 end
